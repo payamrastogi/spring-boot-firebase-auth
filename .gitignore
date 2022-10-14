@@ -31,4 +31,4 @@ build/
 
 ### VS Code ###
 .vscode/
-/src/main/resources/spring-boot-firebase-auth-firebase.json
+/src/main/resources/spring-boot-firebase-auth.json
