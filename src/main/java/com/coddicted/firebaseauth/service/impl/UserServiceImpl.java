@@ -34,4 +34,12 @@ public class UserServiceImpl implements UserService {
         }
         return user;
     }
+
+    @Override
+    public User deleteUserById(String id){
+        Firestore firestore = FirestoreClient.getFirestore();
+        DocumentReference documentReference = firestore.collection("users").document(id);
+        ApiFuture<WriteResult> collectionApiFuture = documentReference.delete();
+        return null;
+    }
 }

@@ -21,4 +21,9 @@ public class UserController {
     public User getUserById(@PathVariable("id") String id) throws ExecutionException, InterruptedException {
         return userService.getUserById(id);
     }
+
+    @DeleteMapping("/{id}")
+    public User deleteUserById(@PathVariable("id") String id){
+        return userService.deleteUserById(id);
+    }
 }
